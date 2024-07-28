@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    font-family: "Roboto Mono", monospace;
+}
+h2{
+    letter-spacing: 2px;
+}
+nav{
+    background-color: rgb(253, 248, 248);
+    width: clamp(360px,50vw,1460px);
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    display: flex;
+    height: 100%;
+    padding: 0 10px;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: rgb(219, 219, 219);
+}
+nav li:first-child{
+    margin-right: auto;
+    padding-left: 30px;
+}
+.card1{
+    background-color: rgb(245, 247, 247);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+.btn{
+    height: 30px;
+    background-color: rgb(249, 249, 249);
+    width: 100px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    outline: none;
+    background-color: #cbdbf1;
+   border: none;
+}
+.btn:hover{
+    background: linear-gradient(45deg, #48226C, #8200E7, #BF3EFF);
+}
+#theme{
+    height: 50px;
+    width: 50px;
+    border-radius: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#theme svg:last-child{
+    display: none;
+}
+.darkmode #theme:first-child{
+    display: none;
+}
+.darkmode #theme:last-child{
+    display: block;
+}
